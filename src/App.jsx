@@ -22,7 +22,8 @@ function App() {
     fetch(URL, {
       method: 'POST',
       headers: {
-        'Content-Type': 'text/xml'
+        'Content-Type': 'text/xml',
+        'Access-Control-Allow-Origin':'*'
       },
       body: xmlData
     })
